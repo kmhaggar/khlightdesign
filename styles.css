@@ -117,7 +117,7 @@ a {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
-  height: 35vh;
+  height: 18vh;
   z-index: -1;
   background: linear-gradient(0deg, var(--background), rgba(16, 18, 20, 0));
 }
@@ -407,6 +407,19 @@ h3 {
 
   .site-footer {
     flex-direction: column;
+  }
+  @media (max-width: 899px) {
+  .hero {
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .hero-image {
+    background-position: center top;
+  }
+
+  .hero::after {
+    height: 15vh;
   }
   @media (min-width: 900px) {
     .hero {
