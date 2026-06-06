@@ -99,7 +99,6 @@ a {
   isolation: isolate;
   overflow: hidden;
   padding-top: 60px;
-  border: 1px solid red;
 }
 
 .hero-image {
@@ -110,7 +109,6 @@ a {
   background-size: cover;
   background-position: center;
   transform: scale(1.02);
-  border: 1px solid yellow;
 }
 
 .hero::after {
@@ -125,7 +123,7 @@ a {
 .hero-content {
   width: min(760px, calc(100% - 40px));
   margin: 0 clamp(20px, 7vw, 96px) clamp(56px, 12vh, 120px);
-border: 1px solid green;
+
 }
 
 .eyebrow,
@@ -147,9 +145,9 @@ h3 {
 }
 
 h1 {
-  max-width: 670px;
-  font-size: clamp(3.5rem, 9vw, 8rem);
-  letter-spacing: 0.02em;
+    max-width: 500px;
+    font-size: clamp(3rem, 5vw, 5rem);
+    letter-spacing: 0.02em;
 }
 
 h2 {
@@ -422,7 +420,20 @@ h3 {
     height: 15vh;
   }
   @media (min-width: 900px) {
-    .hero {
-        padding-top: 160px;
-    }
+  .hero {
+    min-height: 300px;
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+    line-height: 0.95;
+  }
+
+  .hero-content {
+    max-width: 640px;
+  }
 }
