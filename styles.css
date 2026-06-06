@@ -98,6 +98,7 @@ a {
   align-items: end;
   isolation: isolate;
   overflow: hidden;
+  padding-top: 140px;
 }
 
 .hero-image {
