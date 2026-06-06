@@ -95,10 +95,10 @@ a {
   position: relative;
   min-height: 100vh;
   display: grid;
-  align-items: end;
+  align-items: center;
   isolation: isolate;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .hero-image {
