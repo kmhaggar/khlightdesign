@@ -98,7 +98,7 @@ a {
   align-items: end;
   isolation: isolate;
   overflow: hidden;
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .hero-image {
@@ -405,4 +405,8 @@ h3 {
   .site-footer {
     flex-direction: column;
   }
+  @media (min-width: 900px) {
+    .hero {
+        padding-top: 160px;
+    }
 }
