@@ -875,13 +875,25 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .project-media-scroller img,
-  .project-media-scroller video {
+  .project-media-scroller img {
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: calc(100vw - 40px);
     max-height: 60vh;
     object-fit: contain;
     flex: 0 0 auto;
   }
+}
+
+@media (max-width: 860px) {
+
+  .project-media-scroller video {
+    width: calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+
 }
