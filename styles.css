@@ -811,9 +811,12 @@ h3 {
 
 .project-media-scroller img,
 .project-media-scroller video {
-  height: 500px;
   width: auto;
-  max-width: none;
+  height: auto;
+
+  max-width: calc(100vw - 40px);
+  max-height: min(500px, 60vh);
+
   object-fit: contain;
   flex: 0 0 auto;
   scroll-snap-align: start;
@@ -821,6 +824,8 @@ h3 {
   background: var(--surface);
   border: 1px solid var(--line);
 }
+
+
 .video-embed {
   position: relative;
   width: 100%;
@@ -861,39 +866,13 @@ h3 {
     padding: 120px 20px 60px;
   }
 
-  .gallery-hero::after {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(16,18,20,.35) 0%,
-        rgba(16,18,20,.15) 35%,
-        var(--background) 100%
-      );
-  }
+
 
   .gallery-project {
     grid-template-columns: 1fr;
   }
 
-  .project-media-scroller img {
-    width: auto;
-    height: auto;
-    max-width: calc(100vw - 40px);
-    max-height: 60vh;
-    object-fit: contain;
-    flex: 0 0 auto;
-  }
 }
 
-@media (max-width: 860px) {
 
-  .project-media-scroller video {
-    width: calc(100vw - 40px);
-    max-width: calc(100vw - 40px);
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-    flex: 0 0 auto;
-  }
 
-}
